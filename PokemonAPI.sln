@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.WebAPI", "Pokemon.WebAPI\Pokemon.WebAPI.csproj", "{A441A905-D3E5-4A1B-A660-5E7BA49B0BB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.Data", "Pokemon.Data\Pokemon.Data.csproj", "{E5697F31-641B-4235-B740-036A4C096CE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.Models", "Pokemon.Models\Pokemon.Models.csproj", "{5B394792-A85B-4CD5-ADB4-1A91236CB4B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon.Services", "Pokemon.Services\Pokemon.Services.csproj", "{473FCAB4-8882-47F6-B3C0-4259DC607D56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,21 @@ Global
 		{A441A905-D3E5-4A1B-A660-5E7BA49B0BB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A441A905-D3E5-4A1B-A660-5E7BA49B0BB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A441A905-D3E5-4A1B-A660-5E7BA49B0BB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{907B2505-5B8A-4949-84AA-BCE78DF15FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{907B2505-5B8A-4949-84AA-BCE78DF15FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{907B2505-5B8A-4949-84AA-BCE78DF15FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{907B2505-5B8A-4949-84AA-BCE78DF15FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5697F31-641B-4235-B740-036A4C096CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5697F31-641B-4235-B740-036A4C096CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5697F31-641B-4235-B740-036A4C096CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5697F31-641B-4235-B740-036A4C096CE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B394792-A85B-4CD5-ADB4-1A91236CB4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B394792-A85B-4CD5-ADB4-1A91236CB4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B394792-A85B-4CD5-ADB4-1A91236CB4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B394792-A85B-4CD5-ADB4-1A91236CB4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{473FCAB4-8882-47F6-B3C0-4259DC607D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{473FCAB4-8882-47F6-B3C0-4259DC607D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{473FCAB4-8882-47F6-B3C0-4259DC607D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{473FCAB4-8882-47F6-B3C0-4259DC607D56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
