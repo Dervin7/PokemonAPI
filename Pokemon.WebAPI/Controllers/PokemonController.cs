@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Pokemon.Services.Pokemon;
+using Pokemon.Data;
 
 namespace Pokemon.WebAPI.Controllers
 {
