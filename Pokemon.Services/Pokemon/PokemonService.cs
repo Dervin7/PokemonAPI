@@ -3,8 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Pokemon.Data;
 using Pokemon.Models.Pokemon;
+using Pokemon.Data;
+using Pokemon.Data.Entities;
 
 namespace Pokemon.Services.Pokemon
 {
@@ -39,9 +40,9 @@ namespace Pokemon.Services.Pokemon
                 Name = createModel.Name
             };
 
-            _context.Pokemon.Add(entity);
+            _dbContext.Pokemon.Add(entity);
 
-            await _context.SaveChangesAsync();
+            await _dbContext.SaveChangesAsync();
 
             var model = new PokemonModel
             {

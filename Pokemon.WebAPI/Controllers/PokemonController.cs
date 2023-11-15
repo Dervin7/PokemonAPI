@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Pokemon.Services.Pokemon;
+using Pokemon.Data;
+using Pokemon.Models.Pokemon;
 
 namespace Pokemon.WebAPI.Controllers
 {
@@ -12,18 +14,17 @@ namespace Pokemon.WebAPI.Controllers
     [ApiController]
     public class PokemonController : ControllerBase
     {
-        private readonly IPokemonService _pokemonService;
-
-        public PokemonController(IPokemonService pokemonService)
+        private readonly IPokemonService _pService;
+        public PokemonController(IPokemonService pService)
         {
-            _pokemonService = pokemonService;
+            _pService = pService;
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetPokemonById(int Id)
         {
-            var pokemon = await _pokemonService.GetPokemonByIdAsync(id);
-            if (pokemon == null)
+            var pokemon = await _pService.GetPokemonByIdAsync(Id);
+            if (pokemon is null)
             {
                 return NotFound();
             }
@@ -31,7 +32,7 @@ namespace Pokemon.WebAPI.Controllers
             return Ok(pokemon);
         }
 
-           [HttpPost]
+        [HttpPost]
         public async Task<IActionResult> CreatePokemon([FromBody] CreatePokemon request)
         {
             var newPokemon = await _pService.CreatePokemonAsync(request);
