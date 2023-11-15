@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Pokemon.Services.Pokemon;
 using Pokemon.Data;
+using Pokemon.Models.Pokemon;
 
 namespace Pokemon.WebAPI.Controllers
 {

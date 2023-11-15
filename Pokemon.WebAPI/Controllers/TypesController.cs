@@ -7,6 +7,6 @@ namespace Pokemon.WebAPI.Controllers
 {
     public class TypesController
     {
-        
+
     }
 }
