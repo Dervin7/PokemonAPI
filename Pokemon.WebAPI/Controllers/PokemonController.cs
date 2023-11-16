@@ -20,11 +20,11 @@ namespace Pokemon.WebAPI.Controllers
             _pService = pService;
         }
 
-        [HttpGet("{Id}")]
-        public async Task<IActionResult> GetPokemonById(int Id)
+        [HttpGet("{pokemonId:int}")]
+        public async Task<IActionResult> GetPokemonById(int pokemonId)
         {
-            var pokemon = await _pService.GetPokemonByIdAsync(Id);
-            if (pokemon is null)
+            var pokemon = await _pService.GetPokemonByIdAsync(pokemonId);
+            if (pokemon == null)
             {
                 return NotFound();
             }
@@ -36,7 +36,7 @@ namespace Pokemon.WebAPI.Controllers
         public async Task<IActionResult> CreatePokemon([FromBody] CreatePokemon request)
         {
             var newPokemon = await _pService.CreatePokemonAsync(request);
-            if (newPokemon is null)
+            if (newPokemon == null)
             {
                 return NotFound();
             }
