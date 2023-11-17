@@ -1,11 +1,17 @@
 using Pokemon.Data;
 using Microsoft.EntityFrameworkCore;
+using Pokemon.Services.Pokemon;
+using Pokemon.Models.TypesModels;
+using Pokemon.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
+
+builder.Services.AddScoped<IPokemonService, PokemonService>();
+builder.Services.AddScoped<IPokemonTypeService, PokemonTypeService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
