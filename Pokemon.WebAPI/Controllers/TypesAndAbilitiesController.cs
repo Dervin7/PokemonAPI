@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace Pokemon.WebAPI.Controllers
 {
-    public class TypesController
+    public class TypesAndAbilitiesController
     {
-
+        
     }
 }
