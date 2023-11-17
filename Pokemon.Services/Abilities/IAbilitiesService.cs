@@ -8,6 +8,7 @@ namespace Pokemon.Services.Abilities
 {
     public interface IAbilitiesService
     {
-        Task<AbilitiesModel> CreateAbilityAsync(CreateAbility abilityModel);
+        Task<AbilitiesModel> CreateAbilityAsync(CreateAbility createModel);
+        Task<bool> DeleteAbilityAsync(int Id);
     }
 }

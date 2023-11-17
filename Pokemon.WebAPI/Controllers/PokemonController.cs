@@ -26,7 +26,7 @@ namespace Pokemon.WebAPI.Controllers
             var pokemon = await _pService.GetPokemonByIdAsync(pokemonId);
             if (pokemon == null)
             {
-                return NotFound();
+                return BadRequest();
             }
 
             return Ok(pokemon);
@@ -38,7 +38,7 @@ namespace Pokemon.WebAPI.Controllers
             var newPokemon = await _pService.CreatePokemonAsync(request);
             if (newPokemon == null)
             {
-                return NotFound();
+                return BadRequest();
             }
 
             return Ok(newPokemon);

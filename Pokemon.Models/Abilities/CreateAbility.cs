@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Pokemon.Models.AbilitiesModel
+namespace Pokemon.Models.Abilities
 {
-    public class AbilitiesModel
+    public class CreateAbility
     {
         public int Id { get; set; }
         public string AbilityName { get; set; }
