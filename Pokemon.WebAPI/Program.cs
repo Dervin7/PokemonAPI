@@ -1,6 +1,7 @@
 using Pokemon.Data;
 using Microsoft.EntityFrameworkCore;
 using Pokemon.Services.Pokemon;
+using Pokemon.Services.Abilities;
 using Pokemon.Models.TypesModels;
 using Pokemon.Models;
 
@@ -11,6 +12,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddScoped<IPokemonService, PokemonService>();
+builder.Services.AddScoped<IAbilitiesService, AbilitiesService>();
 builder.Services.AddScoped<IPokemonTypeService, PokemonTypeService>();
 
 builder.Services.AddControllers();

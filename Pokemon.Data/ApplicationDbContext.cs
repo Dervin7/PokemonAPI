@@ -13,5 +13,6 @@ namespace Pokemon.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<PokemonEntity> Pokemon { get; set; }
+        public DbSet<AbilityEntity> Abilities { get; set; }
     }
 }
